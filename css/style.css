@@ -108,6 +108,13 @@ h6, .h6 {
 body {
   background-color: #fff;
   overflow-x: hidden;
+  position: relative;
+}
+
+.top-animation {
+  position: absolute;
+  top: 0;
+  z-index: 1;
 }
 
 ::-moz-selection {
@@ -339,6 +346,7 @@ a:hover {
   left: 0;
   right: 0;
   transition: all .5s ease-in-out;
+  z-index: 3;
 }
 
 .headroom--unpinned {
@@ -357,17 +365,22 @@ a:hover {
 
 .banner {
   padding-top: 270px;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 2;
 }
 
 @media (max-width: 991px) {
   .banner {
     padding-top: 200px;
+    padding-bottom: 140px;
   }
 }
 
 @media (max-width: 767px) {
   .banner {
     padding-top: 150px;
+    padding-bottom: 110px;
   }
 }
 
@@ -446,6 +459,19 @@ a:hover {
 .filter-controls li.active::before {
   top: 50%;
   opacity: 1;
+}
+
+.filter-items #loadMore {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.filter-items .it-hide {
+  display: none;
+}
+
+.filter-items .it-show {
+  display: flex;
 }
 
 /* google map */
