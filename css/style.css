@@ -113,7 +113,7 @@ body {
 
 .top-animation {
   position: absolute;
-  top: 0;
+  top: 80px;
   z-index: 1;
 }
 
@@ -393,8 +393,8 @@ a:hover {
 }
 
 .banner {
-  padding-top: 270px;
-  padding-bottom: 200px;
+  padding-top: 200px;
+  padding-bottom: 270px;
   position: relative;
   z-index: 2;
 }
@@ -414,7 +414,8 @@ a:hover {
 }
 
 .banner p {
-  font-size: 24px;
+  font-size: 20px;
+  margin-bottom: 30px;
 }
 
 @media (max-width: 991px) {
